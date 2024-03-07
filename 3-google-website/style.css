@@ -31,3 +31,13 @@
   display: flex;
   gap: 10px;
 }
+.third-section {
+  display: flex;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.column > ul {
+  list-style: none;
+}
