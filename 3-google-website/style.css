@@ -10,8 +10,13 @@
   justify-content: center;
   align-items: center;
 }
-.second-area {
+
+.second-area-outer {
   background-color: rgb(199, 202, 202);
+  width: 40%;
+  padding-bottom: 15px;
+}
+.second-area {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -24,7 +29,7 @@
   margin-bottom: 0;
 }
 .input-area {
-  width: 120%;
+  width: 30%;
 }
 .button-group {
   margin-top: 0px;
@@ -33,10 +38,14 @@
 }
 .third-section {
   display: flex;
+  gap: 3px;
 }
 .column {
   display: flex;
   flex-direction: column;
+  background-color: #7ee5da;
+  padding: 15px;
+  justify-content: center;
 }
 .column > ul {
   list-style: none;
