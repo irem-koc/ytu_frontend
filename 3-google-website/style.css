@@ -44,9 +44,14 @@
   display: flex;
   flex-direction: column;
   background-color: #7ee5da;
-  padding: 15px;
+  padding: 30px;
   justify-content: center;
 }
 .column > ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
