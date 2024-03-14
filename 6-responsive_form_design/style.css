@@ -28,11 +28,15 @@ body {
 .right {
   width: 65%;
 }
-
+label {
+  font-size: 14px;
+  margin-bottom: 1px;
+}
 .row {
   display: flex;
   flex-direction: column;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
+  margin-top: 7px;
 }
 .address-city,
 .country-state-zipcode {
@@ -40,13 +44,24 @@ body {
   width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 16px;
+  justify-content: space-between;
 }
 .address {
   display: flex;
   flex-direction: column;
+  width: 60%;
 }
-
+.city {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+::placeholder {
+  /* Selects all placeholders */
+  color: #9ca3af;
+  font-size: 13px;
+  font-weight: 100;
+}
 h4,
 h1 {
   margin: 0;
@@ -59,7 +74,7 @@ h1 {
 }
 .country,
 .state {
-  width: 30%;
+  width: 37%;
 }
 .zipcode {
   width: 20%;
@@ -96,4 +111,46 @@ input[type="text"] {
 }
 .submit-btn:hover {
   background-color: #1d4ed8;
+}
+.middle-number {
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 12px;
+}
+
+.button-group {
+  border-radius: 3px;
+  height: 2.5rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  width: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.material:hover {
+  cursor: pointer;
+  color: blue;
+}
+@media (max-width: 1024px) {
+  .right {
+    width: 100%;
+  }
+  .form {
+    width: 90%;
+  }
+  .left {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .address,
+  .city,
+  .country,
+  .state,
+  .zipcode {
+    width: 100%;
+  }
 }
