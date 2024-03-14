@@ -2,4 +2,98 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f3f4f6;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.form {
+  width: 60%;
+  margin: 10px auto;
+}
+.form-body {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.form-header {
+  width: 60%;
+}
+
+.left {
+  width: 30%;
+}
+.right {
+  width: 65%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.address-city,
+.country-state-zipcode {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+h4,
+h1 {
+  margin: 0;
+}
+.country,
+.state,
+.zipcode {
+  display: flex;
+  flex-direction: column;
+}
+.country,
+.state {
+  width: 30%;
+}
+.zipcode {
+  width: 20%;
+}
+input[type="text"] {
+  background-color: #f9fafb;
+  outline-color: violet;
+  border: 1px solid #eff0f3;
+  border-radius: 0.25rem;
+  padding: 0 1rem;
+  margin-top: 1px;
+  height: 2.25rem;
+  font-size: 16px;
+}
+.check {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.submit-btn {
+  padding: 8px 15px;
+  background-color: #3b82f6;
+  border: 0;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.submit-btn:hover {
+  background-color: #1d4ed8;
 }
