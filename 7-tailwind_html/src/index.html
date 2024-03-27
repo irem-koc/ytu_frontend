@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/learn-favicon.webp" type="image/x-icon">
+  <title>Learn Anywhere!</title>
+</head>
+<body>
+  <div>
+    <!-- Navbar component -->
+    <nav class="bg-gray-800 pb-10">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <img class="h-8 w-auto rounded-full" src="data:image/png;base64,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" alt="Your Company">
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Anasayfa</a>
+                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Eğitimler</a>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Anasayfa</a>
+          <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Eğitimler</a>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-slate-900 flex mt-5">
+      <!-- Course Types -->
+      <aside class="max-w-1/6 px-2 sm:px-6 lg:px-8">
+        <ul>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+          <li>hello</li>
+        </ul>
+      </aside>
+      <!-- Trainings -->
+      <section class="flex flex-wrap w-4/6 space-x-4 px-2 sm:px-6 lg:px-8">
+        <div class="w-1/2 rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="https://i.ytimg.com/vi/_GTMOmRrqkU/maxresdefault.jpg" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+          </div>
+        </div>
+        <div class="w-1/2 rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="https://i.ytimg.com/vi/_GTMOmRrqkU/maxresdefault.jpg" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+          </div>
+        </div>
+        <div class="w-1/2 rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="https://i.ytimg.com/vi/_GTMOmRrqkU/maxresdefault.jpg" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+          </div>
+        </div>
+        <div class="w-1/2 rounded overflow-hidden shadow-lg mr-5">
+          <img class="w-full" src="https://i.ytimg.com/vi/_GTMOmRrqkU/maxresdefault.jpg" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+          </div>
+        </div>
+        <div class="w-1/2 rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="https://i.ytimg.com/vi/_GTMOmRrqkU/maxresdefault.jpg" alt="Sunset in the mountains">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p class="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
