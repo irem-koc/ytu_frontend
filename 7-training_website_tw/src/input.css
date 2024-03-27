@@ -9,4 +9,7 @@
   .card {
     @apply w-full hover:cursor-pointer flex border p-5 mb-5 border-gray-100 rounded overflow-hidden hover:shadow-lg;
   }
+  ul > li {
+    @apply hover:cursor-pointer;
+  }
 }
