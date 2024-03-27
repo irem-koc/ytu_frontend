@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section {
+    @apply flex flex-wrap w-5/6 space-x-4 px-2 sm:px-6 lg:px-8;
+  }
+  .card {
+    @apply w-1/5  rounded overflow-hidden shadow-lg;
+  }
+}
